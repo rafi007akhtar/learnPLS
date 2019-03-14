@@ -2,7 +2,16 @@
 Containing codes in PL/SQL when I was learning PL/SQL for the first time.
 
 ## Syntax of PL-SQL
-Jump to: [[if-else]](#if-else) [[case]](#case) [[exit-loop-1]](#exit-loop-1) [[exit-loop-2]](#exit-loop-2) [[while-loop]](#while-loop) [[for-loop]](#for-loop) [[reverse-for-loop]](#reverse-for-loop) [[explicit-cursor]](#explicit-cursor)
+Jump to: [[basic-structure]](#basic-structure) [[if-else]](#if-else) [[case]](#case) [[exit-loop-1]](#exit-loop-1) [[exit-loop-2]](#exit-loop-2) [[while-loop]](#while-loop) [[for-loop]](#for-loop) [[reverse-for-loop]](#reverse-for-loop) [[explicit-cursor]](#explicit-cursor)
+
+### basic-structure
+```pls
+DECLARE
+  -- variables are declared and/or initialized here
+BEGIN
+  -- processing statements are written here
+END;
+```
 
 ### if-else
 ```pls
