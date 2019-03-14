@@ -2,7 +2,7 @@
 Containing codes in PL/SQL when I was learning PL/SQL for the first time.
 
 ## Syntax of PL-SQL
-Jump to: [[if-else]](#if-else) [[case]](#case) [[exit-loop-1]](#exit-loop-1) [[exit-loop-2]](#exit-loop-2) [[while-loop]](#while-loop)
+Jump to: [[if-else]](#if-else) [[case]](#case) [[exit-loop-1]](#exit-loop-1) [[exit-loop-2]](#exit-loop-2) [[while-loop]](#while-loop) [[for-loop]](#for-loop) [[reverse-for-loop]](#reverse-for-loop)
 
 ### if-else
 ```pls
@@ -47,3 +47,15 @@ WHILE condition LOOP
 END LOOP;
 ```
 
+### for-loop
+```pls
+FOR variable IN initial..final LOOP
+  statements;
+END LOOP;
+```
+### reverse-for-loop
+```pls
+FOR variable IN REVERSE initial..final LOOP
+  statements;
+END LOOP;
+```
