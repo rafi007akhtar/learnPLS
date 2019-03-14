@@ -12,6 +12,7 @@ BEGIN
   -- processing statements are written here
 END;
 ```
+Example file: [plBasics.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/plBasics.pls)
 
 ### if-else
 ```pls
@@ -23,6 +24,7 @@ ELSE
   statements
 END IF;
 ```
+Example file: [if-else.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/if-else.pls)
 
 ### case
 ```pls
@@ -32,6 +34,8 @@ CASE variable
   ELSE default statement;
 END CASE;
 ```
+Example file: [if-else.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/if-else.pls)
+
 
 ### exit-loop-1
 ```pls
@@ -42,6 +46,7 @@ LOOP
   statements;
 END LOOP
 ```
+Example file: [exitLoops.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/exitLoops.pls)
 
 ### exit-loop-2
 ```pls
@@ -49,12 +54,16 @@ LOOP EXIT WHEN condition;
   statements;
 END LOOP;
 ```
+Example file: [exitLoops.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/exitLoops.pls)
+
+
 ### while-loop
 ```pls
 WHILE condition LOOP
   statements;
 END LOOP;
 ```
+Example file: [while-loop.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/whileLoop.pls)
 
 ### for-loop
 ```pls
@@ -62,12 +71,15 @@ FOR variable IN initial..final LOOP
   statements;
 END LOOP;
 ```
+Example file: [forLoop.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/forLoop.pls)
+
 ### reverse-for-loop
 ```pls
 FOR variable IN REVERSE initial..final LOOP
   statements;
 END LOOP;
 ```
+Example file: [forLoop.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/forLoop.pls)
 
 ### explicit-cursor
 ```pls
@@ -78,3 +90,5 @@ FETCH cursor_name INTO variable_list;  -- get the next value for the selected at
 CLOSE cursor_name;  -- deallocate cursor
 ```
 Variable declaration and cursor initialization (as shown in the first two lines) are written in the `DECLARE` portion of the PL/SQL code. The rest are placed inside the `BEGIN` block.
+
+Example file: [cursors.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/cursors.pls)
