@@ -2,7 +2,7 @@
 Containing codes in PL/SQL when I was learning PL/SQL for the first time.
 
 ## Syntax of PL-SQL
-Jump to: [[basic-structure]](#basic-structure) [[if-else]](#if-else) [[case]](#case) [[exit-loop-1]](#exit-loop-1) [[exit-loop-2]](#exit-loop-2) [[while-loop]](#while-loop) [[for-loop]](#for-loop) [[reverse-for-loop]](#reverse-for-loop) [[explicit-cursor]](#explicit-cursor) [[system-defined-exception]](#system-defined-exception) [[user-defined-exception]](#user-defined-exception)
+Jump to: [[basic-structure]](#basic-structure) [[if-else]](#if-else) [[case]](#case) [[exit-loop-1]](#exit-loop-1) [[exit-loop-2]](#exit-loop-2) [[while-loop]](#while-loop) [[for-loop]](#for-loop) [[reverse-for-loop]](#reverse-for-loop) [[explicit-cursor]](#explicit-cursor) [[system-defined-exception]](#system-defined-exception) [[user-defined-exception]](#user-defined-exception) [[procedure]](#procedure)
 
 ### basic-structure
 ```cool
@@ -124,4 +124,35 @@ EXCEPTION
 END;
 ```
 Example file: [user-defined-exception.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/user-defined-exception.pls)
+
+### procedure
+File with procedure body: 
+```cool
+CREATE [OR REPLACE] PROCEDURE procedure_name (parameters IN|OUT|IN OUT datatype)
+IS
+  -- variables needed for procedure are declared here
+BEGIN
+  -- procedure body goes here
+END;
+```
+Calling the procedure (in a different file): `procedure_name(parameters)` <br>
+Example files:
+  - procedure written in [procedure.sql](https://github.com/rafi007akhtar/learnPLS/blob/master/procedure.sql)
+  - procedure called in [procedure.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/procedure.pls)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
