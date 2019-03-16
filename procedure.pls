@@ -4,6 +4,6 @@ DECLARE
 	num3 REAL := 5;
 	
 BEGIN
-	print_average(num1, num2, num3);
+	print_average(num1, num2, num3);  -- output: Mean = 4
 
 END;
