@@ -2,7 +2,7 @@
 Containing codes in PL/SQL when I was learning PL/SQL for the first time.
 
 ## Syntax of PL-SQL
-Jump to: [[basic-structure]](#basic-structure) [[if-else]](#if-else) [[case]](#case) [[exit-loop-1]](#exit-loop-1) [[exit-loop-2]](#exit-loop-2) [[while-loop]](#while-loop) [[for-loop]](#for-loop) [[reverse-for-loop]](#reverse-for-loop) [[explicit-cursor]](#explicit-cursor) [[system-defined-exception]](#system-defined-exception) [[user-defined-exception]](#user-defined-exception) [[procedure]](#procedure) [[function]](#function)
+Jump to: [[basic-structure]](#basic-structure) [[if-else]](#if-else) [[case]](#case) [[exit-loop-1]](#exit-loop-1) [[exit-loop-2]](#exit-loop-2) [[while-loop]](#while-loop) [[for-loop]](#for-loop) [[reverse-for-loop]](#reverse-for-loop) [[explicit-cursor]](#explicit-cursor) [[system-defined-exception]](#system-defined-exception) [[user-defined-exception]](#user-defined-exception) [[procedure]](#procedure) [[function]](#function) [[trigger]](#trigger)
 
 ### basic-structure
 ```cool
@@ -154,3 +154,35 @@ END;
 ```
 To call the function: `var := function_name(parameter_list);`
 Example file: [function.sql](https://github.com/rafi007akhtar/learnPLS/blob/master/function.sql)
+
+### trigger
+```cool
+CREATE [OR REPLACE] TRIGGER trigger_name
+BEFORE | AFTER | trigger_events_separated_by_OR  -- events: INSERT, UPDATE, DELETE
+ON table_name
+[REFERENCING OLD AS o NEW AS n]
+FOR EACH ROW
+WHEN (trigger_condition)
+DECLARE 
+  -- variables to be declared here
+BEGIN
+  -- statements to happen when trigger happens
+EXCEPTION  -- this block is optional
+  -- exception-handling statements
+END;
+```
+Example files:
+  - trigger written in [trigger.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/trigger.pls)
+  - trigger fired in [fireTrigger.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/fireTrigger.pls)
+  
+
+
+
+
+
+
+
+
+
+
+
