@@ -2,7 +2,7 @@
 Containing codes in PL/SQL when I was learning PL/SQL for the first time.
 
 ## Syntax of PL-SQL
-Jump to: [[basic-structure]](#basic-structure) [[if-else]](#if-else) [[case]](#case) [[exit-loop-1]](#exit-loop-1) [[exit-loop-2]](#exit-loop-2) [[while-loop]](#while-loop) [[for-loop]](#for-loop) [[reverse-for-loop]](#reverse-for-loop) [[explicit-cursor]](#explicit-cursor) [[system-defined-exception]](#system-defined-exception) [[user-defined-exception]](#user-defined-exception) [[procedure]](#procedure)
+Jump to: [[basic-structure]](#basic-structure) [[if-else]](#if-else) [[case]](#case) [[exit-loop-1]](#exit-loop-1) [[exit-loop-2]](#exit-loop-2) [[while-loop]](#while-loop) [[for-loop]](#for-loop) [[reverse-for-loop]](#reverse-for-loop) [[explicit-cursor]](#explicit-cursor) [[system-defined-exception]](#system-defined-exception) [[user-defined-exception]](#user-defined-exception) [[procedure]](#procedure) [function](#function)
 
 ### basic-structure
 ```cool
@@ -128,31 +128,29 @@ Example file: [user-defined-exception.pls](https://github.com/rafi007akhtar/lear
 ### procedure
 File with procedure body: 
 ```cool
-CREATE [OR REPLACE] PROCEDURE procedure_name (parameters IN|OUT|IN OUT datatype)
+CREATE [OR REPLACE] PROCEDURE procedure_name (parameters IN|OUT|IN OUT datatypes)
 IS
   -- variables needed for procedure are declared here
 BEGIN
   -- procedure body goes here
 END;
 ```
-Calling the procedure (in a different file): `procedure_name(parameters)` <br>
+Calling the procedure (in a different file): `procedure_name(parameters);` <br>
 Example files:
   - procedure written in [procedure.sql](https://github.com/rafi007akhtar/learnPLS/blob/master/procedure.sql)
   - procedure called in [procedure.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/procedure.pls)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### function
+File with function body:
+```cool
+CREATE [OR REPLACE] FUNCTION function_name (parameters IN|OUT|IN OUT datatypes)
+RETURN return_type
+IS
+  -- all variable declarations are written here
+BEGIN
+  -- function body is written here
+  RETURN return_variable
+END;
+```
+To call the function: `var := function_name(parameter_list);`
+Example file: [function.sql](https://github.com/rafi007akhtar/learnPLS/blob/master/function.sql)
