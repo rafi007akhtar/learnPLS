@@ -176,9 +176,12 @@ Example files:
   - trigger fired in [fireTrigger.pls](https://github.com/rafi007akhtar/learnPLS/blob/master/fireTrigger.pls)
   
 
+## Contribution
+- If you catch a bug, [open an issue](https://github.com/rafi007akhtar/learnPLS/issues).
+- If you can add to this repo by code or otherwise, or wish to correct the programs, do so by [creating a pull request](https://github.com/rafi007akhtar/learnPLS/pulls). [(Here's how you can create a pull request.)](https://help.github.com/en/articles/creating-a-pull-request)
 
-
-
+## License
+[MIT License](https://github.com/rafi007akhtar/learnPLS/blob/master/LICENSE)
 
 
 
